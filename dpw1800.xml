@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="PalletAutoLoaderTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>DPW 1800 AutoLoad</en></name>
+        <functions>
+            <function>$l10n_function_PalletAutoload_Trailer</function>
+        </functions>
+        <image>store_dpw1800.dds</image>
+        <price>24999</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>MEMDOR</brand>
+        <category>trailers</category>
+        <shopTranslationOffset>0 -0.026 0</shopTranslationOffset>
+        <shopRotationOffset>0.054 0 0</shopRotationOffset>
+        <shopLoadingDelay initial="0.35"/>
+        <vertexBufferMemoryUsage>1120000</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>196608</indexBufferMemoryUsage>
+        <textureMemoryUsage>1245184</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+	
+    <base>
+        <typeDesc>$l10n_type_PalletAutoload_Trailer</typeDesc>
+        <filename>dpw1800.i3d</filename>
+        <size width="4" length="12.5" lengthOffset="0.3"/>
+        <components>
+            <!-- <component centerOfMass="0 -0.1 -2" solverIterationCount="10" mass="1000"/> -->
+            <!-- <component centerOfMass="0 -0.1 0" solverIterationCount="10" mass="500"/> -->
+            <component centerOfMass="0 -0.1 -2"  solverIterationCount="5" mass="1500"/>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="500"/>
+            <component solverIterationCount="10" mass="300"/>
+            <joint component1="1" component2="2" node="componentJointFront" rotLimit="0 120 0" transLimit="0 0 0"/>
+            <joint component1="2" component2="3" node="componentJointDrawbar" rotLimit="0 0 0" transLimit="0 0 0"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TRAILER"/>
+    </base>
+	
+    <!-- <aPalletAutoLoader> -->
+        <!-- <aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_DPW"> -->
+            <!-- <aPalletAutoLoaderConfiguration name="$l10n_configuration_Pallet_Payload_1" price="0" maxObjects="22" useBales="false" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0"> -->
+                <!-- <trigger node="triggerNode"/> -->
+                <!-- <pickupTriggers> -->
+                    <!-- <pickupTrigger node="pickupTriggerLeft"/> -->
+                    <!-- <pickupTrigger node="pickupTriggerRight"/> -->
+                <!-- </pickupTriggers> -->
+                <!-- <loadArea baseNode="dpw1800_main_component1" leftRightCornerOffset="1.23 1.129 4.05" lenght="9.7" width="2.46" height="2.5"/> -->
+            <!-- </aPalletAutoLoaderConfiguration> -->
+            <!-- <aPalletAutoLoaderConfiguration name="$l10n_configuration_Pallet_Payload_2" price="1000" maxObjects="36" useBales="false" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0"> -->
+                <!-- <trigger node="triggerNode"/> -->
+                <!-- <pickupTriggers> -->
+                    <!-- <pickupTrigger node="pickupTriggerLeft"/> -->
+                    <!-- <pickupTrigger node="pickupTriggerRight"/> -->
+                <!-- </pickupTriggers> -->
+                <!-- <loadArea baseNode="dpw1800_main_component1" leftRightCornerOffset="1.23 1.129 4.05" lenght="9.7" width="2.46" height="2.5"/> -->
+            <!-- </aPalletAutoLoaderConfiguration> -->
+        <!-- </aPalletAutoLoaderConfigurations> -->
+    <!-- </aPalletAutoLoader> -->
+	
+    <aPalletAutoLoader>
+        <aPalletAutoLoaderConfigurations>
+            <aPalletAutoLoaderConfiguration maxObjects="80" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0">
+                <trigger node="triggerNode"/>
+                <pickupTriggers>
+                    <pickupTrigger node="pickupTriggerLeft"/>
+                    <pickupTrigger node="pickupTriggerRight"/>
+                </pickupTriggers>
+                <loadArea baseNode="dpw1800_vis" leftRightCornerOffset="1.25 -0.443 4.038" lenght="9.7" width="2.5" height="2.5"/>
+            </aPalletAutoLoaderConfiguration>
+        </aPalletAutoLoaderConfigurations>
+    </aPalletAutoLoader>
+	
+    <designConfigurations>
+        <designConfiguration name="$l10n_configuration_DPW_1800_Autoload">
+            <objectChange node="barFront" visibilityActive="false"/>
+            <objectChange node="barBack" visibilityActive="false"/>
+            <objectChange node="colPart01" compoundChildActive="false"/>
+            <objectChange node="colPart02" compoundChildActive="false"/>
+            <objectChange node="colPart03" compoundChildActive="false"/>
+            <objectChange node="colPart04" compoundChildActive="false"/>
+            <objectChange node="kupplung" visibilityActive="false"/>
+            <objectChange node="connectionHoses" visibilityActive="false"/>
+            <objectChange node="attacherJointTrailer" visibilityActive="false" rotationActive="0 -90 0"/>
+        </designConfiguration>
+        <!-- <designConfiguration name="$l10n_configuration_DPW_1800_Autoload2" price="900">
+            <objectChange node="barFront" visibilityActive="true"/>
+            <objectChange node="barBack" visibilityActive="true"/>
+            <objectChange node="colPart01" compoundChildActive="true"/>
+            <objectChange node="colPart02" compoundChildActive="true"/>
+            <objectChange node="colPart03" compoundChildActive="true"/>
+            <objectChange node="colPart04" compoundChildActive="true"/>
+            <objectChange node="kupplung" visibilityActive="false"/>
+            <objectChange node="connectionHoses" visibilityActive="false"/>
+            <objectChange node="attacherJointTrailer" visibilityActive="false" rotationActive="0 -90 0"/>
+        </designConfiguration> -->
+        <designConfiguration name="$l10n_configuration_DPW_1800_Autoload3" price="1500">
+            <objectChange node="barFront" visibilityActive="false"/>
+            <objectChange node="barBack" visibilityActive="false"/>
+            <objectChange node="colPart01" compoundChildActive="false"/>
+            <objectChange node="colPart02" compoundChildActive="false"/>
+            <objectChange node="colPart03" compoundChildActive="false"/>
+            <objectChange node="colPart04" compoundChildActive="false"/>
+            <objectChange node="kupplung" visibilityActive="true"/>
+            <objectChange node="connectionHoses" visibilityActive="true"/>
+            <objectChange node="attacherJointTrailer" visibilityActive="true" rotationActive="0 90 0"/>
+        </designConfiguration>
+        <!-- <designConfiguration name="$l10n_configuration_DPW_1800_Autoload4" price="3900">
+            <objectChange node="barFront" visibilityActive="true"/>
+            <objectChange node="barBack" visibilityActive="true"/>
+            <objectChange node="colPart01" compoundChildActive="true"/>
+            <objectChange node="colPart02" compoundChildActive="true"/>
+            <objectChange node="colPart03" compoundChildActive="true"/>
+            <objectChange node="colPart04" compoundChildActive="true"/>
+            <objectChange node="kupplung" visibilityActive="true"/>
+            <objectChange node="connectionHoses" visibilityActive="true"/>
+            <objectChange node="attacherJointTrailer" visibilityActive="true" rotationActive="0 90 0"/>
+        </designConfiguration> -->
+    </designConfigurations>
+	
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.0" repr="wheelFrontLeft" forcePointRatio="0.25" initialCompression="8" suspTravel="0.3" spring="190" mass="0.5" damper="40" yOffset="0.01" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.0" repr="wheelFrontRight" forcePointRatio="0.25" initialCompression="8" suspTravel="0.3" spring="190" mass="0.5" damper="40" yOffset="0.01" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleLeft" forcePointRatio="0.25" initialCompression="6" suspTravel="0.7" spring="190" mass="0.5" damper="40" brakeFactor="0.25" yOffset="0.01" maxLatStiffness="350"/>
+                        <wheelChock parkingNode="wheelChock01_01"/>
+                        <wheelChock parkingNode="wheelChock01_02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleRight" forcePointRatio="0.25" initialCompression="6" suspTravel="0.7" spring="190" mass="0.5" damper="40" brakeFactor="0.25" yOffset="0.01" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackLeft" forcePointRatio="0.25" initialCompression="6" suspTravel="0.7" spring="190" mass="0.5" damper="40" brakeFactor="0.25" yOffset="0.01" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackRight" forcePointRatio="0.25" initialCompression="6" suspTravel="0.7" spring="190" mass="0.5" damper="40" brakeFactor="0.25" yOffset="0.01" maxLatStiffness="350"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+        <hubs>
+            <color0>SHARED_DA_METAL_BLACK</color0>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="wheelFrontLeft" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true" scale="0.25 0.25 0.25"/>
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.25 0.25 0.25"/>
+            <hub linkNode="wheelMiddleLeft" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true" scale="0.25 0.25 0.25"/>
+            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.25 0.25 0.25"/>
+            <hub linkNode="wheelBackLeft" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true" scale="0.25 0.25 0.25"/>
+            <hub linkNode="wheelBackRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.25 0.25 0.25"/>
+        </hubs>
+    </wheels>
+	
+    <attacherJoints comboDuration="2">
+        <attacherJoint node="attacherJointTrailer" jointType="trailer" lowerRotLimit="10 65 65" upperRotationOffset="0" allowsJointLimitMovement="false">
+            <distanceToGround lower="0.34" upper="0.98"/>
+            <schema position="1 0" rotation="0" invertX="false"/>
+            <attachSound template="TRUCK_ATTACH_01" linkNode="dpw1800_main_component1"/>
+        </attacherJoint>
+        <attacherJoint node="attacherJointTrailer" jointType="trailerLow" lowerRotLimit="10 65 65" upperRotationOffset="0" allowsJointLimitMovement="false">
+            <distanceToGround lower="0.34" upper="0.98"/>
+            <schema position="1 0" rotation="0" invertX="false"/>
+            <attachSound template="TRUCK_ATTACH_03" linkNode="dpw1800_main_component1"/>
+        </attacherJoint>
+    </attacherJoints>
+	
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" rootNode="dpw1800_drawbar_component3" attacherHeight="0.65"/>
+        </inputAttacherJoints>
+        <brakeForce force="0.6"/>
+        <support animationName="moveSupport"/>
+    </attachable>
+	
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="chockSupport01" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="chockSupport02" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+    </dynamicallyLoadedParts>
+	
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airIn" adapterNode="airIn_detached" length="1.4" diameter="0.02" straighteningFactor="1">
+            <objectChange node="airIn_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airOut" adapterNode="airOut_detached" length="1.4" diameter="0.02" straighteningFactor="1">
+            <objectChange node="airOut_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" adapterNode="electric_detached" length="1.4" diameter="0.01" straighteningFactor="1">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <target attacherJointIndices="1 2 3" type="airDoubleRed" node="0>0|4|5|1|7" socket="air_red"/>
+        <target attacherJointIndices="1 2 3" type="airDoubleYellow" node="0>0|4|5|1|8" socket="air_yellow"/>
+        <target attacherJointIndices="1 2 3" type="electric" node="0>0|4|5|1|6" socket="electric"/>
+        <target attacherJointIndices="1 2 3" type="hydraulicIn" node="0>0|4|5|1|0" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2 3" type="hydraulicOut" node="0>0|4|5|1|1" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2 3" type="hydraulicIn" node="0>0|4|5|1|2" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2 3" type="hydraulicOut" node="0>0|4|5|1|3" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2 3" type="hydraulicIn" node="0>0|4|5|1|4" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2 3" type="hydraulicOut" node="0>0|4|5|1|5" socket="hydraulic01"/>
+    </connectionHoses>
+	
+    <lights>
+        <sharedLight linkNode="whiteRound_01" filename="$data/shared/assets/reflectors/lizard/whiteRound_01.xml"/>
+        <sharedLight linkNode="whiteRound_02" filename="$data/shared/assets/reflectors/lizard/whiteRound_01.xml"/>
+        <sharedLight linkNode="yellowRound_02_01" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml"/>
+        <sharedLight linkNode="yellowRound_02_02" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml"/>
+        <sharedLight linkNode="plateNumberLight01_01" filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml"/>
+        <sharedLight linkNode="plateNumberLight01_02" filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml"/>
+        <sharedLight linkNode="sideMarker03_left" filename="$data/shared/assets/lights/lizard/sideMarker03_left.xml"/>
+        <sharedLight linkNode="sideMarker03_right" filename="$data/shared/assets/lights/lizard/sideMarker03_right.xml"/>
+        <sharedLight linkNode="rearLight13_left" filename="$data/shared/assets/lights/lizard/rearLight13_left.xml"/>
+        <sharedLight linkNode="rearLight13_right" filename="$data/shared/assets/lights/lizard/rearLight13_right.xml"/>
+        <sharedLight linkNode="sideMarker05Orange_01" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05Orange_02" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0"/>
+                <light node="licensePlateLightHigh" lightTypes="0"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="backLightsHigh1"/>
+            </high>
+        </realLights>
+    </lights>
+	
+    <licensePlates>
+        <licensePlate node="licensePlateNodeBack" frame="false" position="BACK" preferedType="ELONGATED" placementArea="0.049 0.255 0.049 0.255"/>
+    </licensePlates>
+	
+    <animations>
+        <animation name="moveSupport">
+            <part componentJointIndex="2" startTime="0.0" endTime="0.15" startRotLimit="15 0 0" endRotLimit="15 0 0"/>
+            <sound template="clackVar5" startTime="0.14" volumeScale="2.3" pitchScale="1.5" linkNode="attacherJoint"/>
+        </animation>
+    </animations>
+	
+    <cylindered>
+        <movingParts>
+            <movingPart node="springLeftPart" referencePoint="springLeftRef" referenceFrame="springLeftRef" isActiveDirty="true" maxUpdateDistance="50"/>
+            <movingPart node="springRightPart" referencePoint="springRightRef" referenceFrame="springRightRef" isActiveDirty="true" maxUpdateDistance="50"/>
+            <movingPart node="springLeft" referencePoint="springLeftRef" referenceFrame="springLeftRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="50"/>
+            <movingPart node="springRight" referencePoint="springRightRef" referenceFrame="springRightRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="50"/>
+        </movingParts>
+        <sounds>
+            <hydraulic template="defaultHydraulicSound" linkNode="0>"/>
+        </sounds>
+    </cylindered>
+	
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="dpw1800_main_component1" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="startPoint01" endNode="startPoint01End" offsetLeft="0.2"/>
+                    <tensionBelt startNode="startPoint02" endNode="startPoint02End"/>
+                    <tensionBelt startNode="startPoint03" endNode="startPoint03End"/>
+                    <tensionBelt startNode="startPoint04" endNode="startPoint04End"/>
+                    <tensionBelt startNode="startPoint05" endNode="startPoint05End"/>
+                    <tensionBelt startNode="startPoint06" endNode="startPoint06End"/>
+                    <tensionBelt startNode="startPoint07" endNode="startPoint07End"/>
+                    <tensionBelt startNode="startPoint08" endNode="startPoint08End"/>
+                    <tensionBelt startNode="startPoint09" endNode="startPoint09End" offsetRight="0.2"/>
+                    <sounds>
+                        <addBelt template="beltOpen"/>
+                        <removeBelt template="beltClose"/>
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+	
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_PalletAutoload" fillTypeCategories="PRODUCT" capacity="1" showCapacityInShop="fals" showOnHud="fals"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+    <ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="7"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2" width="2.5" height="3" length="10.3" lengthOffset="-4.2" hasCollision="false"/>
+        <agentAttachment jointNode="componentJointFront" rotCenterWheelIndices="3 4 5 6" width="2.5" height="1.2" length="2" lengthOffset="6.75"/>
+    </ai>
+	
+    <foliageBending>
+        <bendingNode minX="-1.3" maxX="1.3" minZ="-5.8" maxZ="4.1" yOffset="0.6"/>
+        <bendingNode minX="-0.3" maxX="0.3" minZ="0" maxZ="2" yOffset="0" node="drawbar"/>
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="dpw1800_mat" baseNode="dpw1800_vis">
+            <shaderParameter name="colorMat0" value="BREMER_BLUE1"/>
+        </material>
+    </baseMaterial>
+
+    <!-- <baseMaterialConfigurations useDefaultColors="true" defaultColorIndex="14" price="500">
+		<material name="dpw1800_mat" shaderParameter="colorMat0"/>
+        <baseMaterialConfiguration name="Silver Kupfer"color="1 1 1 1" material="3" price="500"/>
+        <baseMaterialConfiguration name="Black Kupfer"color="0 0 0 1" material="3" price="500"/>
+        <baseMaterialConfiguration name="Red Kupfer"color="1 0 0 1" material="3" price="500"/>
+        <baseMaterialConfiguration name="Green Kupfer"color="0 1 0 1" material="3" price="500"/>
+        <baseMaterialConfiguration name="Gold Kupfer"color="1 1 0 1" material="3" price="500"/>
+        <baseMaterialConfiguration name="Blue Kupfer"color="0 0 1 1" material="3" price="500"/>
+		<baseMaterialConfiguration name="Turquoise Kupfer" color="0.005 0.754 0.754 1" material="3" price="500"/>
+		<baseMaterialConfiguration name="Purple Kupfer" color="0.754 0.005 0.754 1" material="3" price="500"/>
+	</baseMaterialConfigurations> -->
+
+    <rimColorConfigurations defaultColorIndex="0" useDefaultColors="true" price="200">
+        <rimColorConfiguration name="Silver Kupfer" color="1 1 1 1" material="3" price="200"/>
+        <rimColorConfiguration name="Black Kupfer" color="0 0 0 1" material="3" price="200"/>
+        <rimColorConfiguration name="Red Kupfer" color="1 0 0 1" material="3" price="200"/>
+        <rimColorConfiguration name="Green Kupfer" color="0 1 0 1" material="3" price="200"/>
+        <rimColorConfiguration name="Gold Kupfer" color="1 1 0 1" material="3" price="200"/>
+        <rimColorConfiguration name="Blue Kupfer" color="0 0 1 1" material="3" price="200"/>
+        <rimColorConfiguration name="Turquoise Kupfer" color="0.005 0.754 0.754 1" material="3" price="200"/>
+        <rimColorConfiguration name="Purple Kupfer" color="0.754 0.005 0.754 1" material="3" price="200"/>
+    </rimColorConfigurations>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+    
+    <i3dMappings>
+        <i3dMapping id="dpw1800_main_component1" node="0>"/>
+        <i3dMapping id="dpw1800_vis" node="0>0"/>
+        <i3dMapping id="wheelMiddleLeft" node="0>0|0|0"/>
+        <i3dMapping id="wheelMiddleRight" node="0>0|0|1"/>
+        <i3dMapping id="wheelBackLeft" node="0>0|0|2"/>
+        <i3dMapping id="wheelBackRight" node="0>0|0|3"/>
+        <i3dMapping id="chockSupport01" node="0>0|0|4"/>
+        <i3dMapping id="chockSupport02" node="0>0|0|5"/>
+        <i3dMapping id="wheelChock01_01" node="0>0|0|6"/>
+        <i3dMapping id="wheelChock01_02" node="0>0|0|7"/>
+        <i3dMapping id="sideMarker05Orange_02" node="0>0|1|0|0"/>
+        <i3dMapping id="sideMarker05Orange_01" node="0>0|1|0|1"/>
+        <i3dMapping id="whiteRound_01" node="0>0|1|0|2"/>
+        <i3dMapping id="whiteRound_02" node="0>0|1|0|3"/>
+        <i3dMapping id="barFront" node="0>0|2|0"/>
+        <i3dMapping id="backPart" node="0>0|2|1"/>
+        <i3dMapping id="licensePlateNodeBack" node="0>0|2|1|0"/>
+        <i3dMapping id="barBack" node="0>0|2|1|1"/>
+        <i3dMapping id="plateNumberLight01_01" node="0>0|2|1|2|0|0"/>
+        <i3dMapping id="plateNumberLight01_02" node="0>0|2|1|2|0|1"/>
+        <i3dMapping id="yellowRound_02_01" node="0>0|2|1|2|0|2"/>
+        <i3dMapping id="yellowRound_02_02" node="0>0|2|1|2|0|3"/>
+        <i3dMapping id="sideMarker03_left" node="0>0|2|1|2|0|4"/>
+        <i3dMapping id="sideMarker03_right" node="0>0|2|1|2|0|5"/>
+        <i3dMapping id="rearLight13_left" node="0>0|2|1|2|0|6"/>
+        <i3dMapping id="rearLight13_right" node="0>0|2|1|2|0|7"/>
+        <i3dMapping id="backLightsHigh1" node="0>0|2|1|2|1|0"/>
+        <i3dMapping id="licensePlateLightHigh" node="0>0|2|1|2|1|1"/>
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|1|2|2|0"/>
+        <i3dMapping id="turnLightRightBack" node="0>0|2|1|2|2|1"/>
+        <i3dMapping id="colPart03" node="0>0|2|1|4"/>
+        <i3dMapping id="colPart04" node="0>0|2|1|5"/>
+        <i3dMapping id="colPart01" node="0>0|2|2|0"/>
+        <i3dMapping id="colPart02" node="0>0|2|2|1"/>
+        <i3dMapping id="tensionBelts" node="0>0|3"/>
+        <i3dMapping id="startPoint01" node="0>0|3|0"/>
+        <i3dMapping id="startPoint01End" node="0>0|3|0|0"/>
+        <i3dMapping id="startPoint02" node="0>0|3|1"/>
+        <i3dMapping id="startPoint02End" node="0>0|3|1|0"/>
+        <i3dMapping id="startPoint03" node="0>0|3|2"/>
+        <i3dMapping id="startPoint03End" node="0>0|3|2|0"/>
+        <i3dMapping id="startPoint04" node="0>0|3|3"/>
+        <i3dMapping id="startPoint04End" node="0>0|3|3|0"/>
+        <i3dMapping id="startPoint05" node="0>0|3|4"/>
+        <i3dMapping id="startPoint05End" node="0>0|3|4|0"/>
+        <i3dMapping id="startPoint06" node="0>0|3|5"/>
+        <i3dMapping id="startPoint06End" node="0>0|3|5|0"/>
+        <i3dMapping id="startPoint07" node="0>0|3|6"/>
+        <i3dMapping id="startPoint07End" node="0>0|3|6|0"/>
+        <i3dMapping id="startPoint08" node="0>0|3|7"/>
+        <i3dMapping id="startPoint08End" node="0>0|3|7|0"/>
+        <i3dMapping id="startPoint09" node="0>0|3|8"/>
+        <i3dMapping id="startPoint09End" node="0>0|3|8|0"/>
+        <i3dMapping id="beltActivationTrigger" node="0>0|3|9"/>
+        <i3dMapping id="componentJointFront" node="0>0|5"/>
+        <i3dMapping id="dpw1800_axis_component2" node="1>"/>
+        <i3dMapping id="componentJointDrawbar" node="1>0"/>
+        <i3dMapping id="axis" node="1>1"/>
+        <i3dMapping id="wheelFrontLeft" node="1>2"/>
+        <i3dMapping id="wheelFrontRight" node="1>3"/>
+        <i3dMapping id="springRightPart" node="1>4"/>
+        <i3dMapping id="springRight" node="1>4|0"/>
+        <i3dMapping id="springLeftPart" node="1>5"/>
+        <i3dMapping id="springLeft" node="1>5|0"/>
+        <i3dMapping id="dpw1800_drawbar_component3" node="2>"/>
+        <i3dMapping id="drawbar" node="2>0"/>
+        <i3dMapping id="electric_detached" node="2>0|0|0"/>
+        <i3dMapping id="airOut_detached" node="2>0|0|1"/>
+        <i3dMapping id="airIn_detached" node="2>0|0|2"/>
+        <i3dMapping id="airOut" node="2>0|0|3"/>
+        <i3dMapping id="airIn" node="2>0|0|4"/>
+        <i3dMapping id="electric" node="2>0|0|5"/>
+        <i3dMapping id="attacherJoint" node="2>1"/>
+        <i3dMapping id="springRightRef" node="2>2"/>
+        <i3dMapping id="springLeftRef" node="2>3"/>
+        <i3dMapping id="aPalletAutoLoaderBaseNode" node="0>0|7"/>
+        <i3dMapping id="pickupTriggerLeft" node="0>0|7|0"/>
+        <i3dMapping id="triggerNode" node="0>0|7|1"/>
+        <i3dMapping id="pickupTriggerRight" node="0>0|7|2"/>
+        <i3dMapping id="kupplung" node="0>0|4|5|0"/>
+        <i3dMapping id="connectionHoses" node="0>0|4|5|1"/>
+        <i3dMapping id="attacherJointTrailer" node="0>0|4|11"/>
+    </i3dMappings>
+</vehicle>

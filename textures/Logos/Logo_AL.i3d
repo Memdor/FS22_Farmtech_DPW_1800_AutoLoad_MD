@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dpw1800" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="Logo_AL.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Aufkleber_mat" materialId="4" specularColor="0.694118 1 0.109804">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Logo_AL.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="LogoAL" scale="0.34 0.34 1" clipDistance="300" nodeId="7" materialIds="4" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+  </Scene>
+
+</i3D>

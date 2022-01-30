@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+    <author>MEMDOR</author>
+    <contributors>
+        <contributor>MythosofModding (attacherJointTrailer)</contributor>
+        <contributor>BigDaddy (Federn, centerOfMass)</contributor>
+    </contributors>
+
+    <version>1.3.0.0</version>
+
+    <title>
+        <en>Farmtech DPW 1800 Auto-Load.</en>
+        <de>Farmtech DPW 1800 Auto-Lader.</de>
+        <fr>Farmtech DPW 1800 Chargement Automatique.</fr>
+        <it>Farmtech DPW 1800 Caricatore Automatico.</it>
+    </title>
+
+    <description>
+        <en>
+            <![CDATA[
+Farmtech DPW 1800 trailer with pallet autoloader function.
+
+For the function of the pallet autoloader the "Pallet Autoloader Specialization" from Achimobil is needed.
+
+Farmtech DPW 1800 trailer with pallet autoloader function will make your work with productions and numerous pallets easier. 
+Up to 44 Euro pallets can be transported with one trailer. 
+If you add a trailer hitch to the configuration in the store, two trailers can transport up to 88 Euro pallets in one trip.
+
+Euro pallets, liquid tanks, BigBag pallets, cotton round bales and oversized Euro pallets can be loaded by the pallet autoloader specialization.
+
+Color selection for rims.
+
+Price 24999 €
+
+Changelog V 1.3.0.0
+- Tested with TestRunner_public (GIANTS) (Error free!)
+- Autoload trigger adjusted.
+- Various collisions edited
+- Own weight increased
+
+Changelog V 1.2.0.0
+- Tested with TestRunner_public (GIANTS) (error free!)
+- Autoload trigger adjusted laterally
+
+Changelog V 1.1.0.1
+- Tested with TestRunner_public (GIANTS) (error free!)
+
+Changelog V 1.1.0.0
+- Springs customized by BigDaddy
+- centerOfMass customized by BigDaddy/MEMDOR
+- Translation moved to the modDesc
+- Selection grid removed
+- Round cotton bales can now be loaded (belts must come off!)
+- Trailer hitch attached (MythosofModding)
+- New store image
+
+Changelog V 1.0.9.1
+- Correction
+
+Changelog V V 1.0.9.0
+- Color selection rims
+- Logos 
+            ]]>        
+        </en>
+		
+        <de>
+            <![CDATA[
+Farmtech DPW 1800 Anhänger mit Paletten-Autoloader Funktion.
+
+Für die Funktion des Paletten-Autoloader wird die „Paletten Autoloader Spezialisierung“ von Achimobil benötigt.
+
+Der Farmtech DPW 1800 Anhänger mit Paletten-Autoloader Funktion erleichter Ihnen die Arbeit mit den Produktionen und den zahlreichen Paletten. 
+Bis zu 44 Euro-Paletten können mit einem Anhänger transportiert werden. 
+Verbauen Sie bei der Konfiguration im Shop noch eine Anhängerkupplung, so können mit zwei Anhängern bis zu 88 Euro-Paletten mit einer Fahrt befördert werden können.
+
+Euro-Paletten, Flüssigkeitstanks, BigBag Paletten, Baumwolle Rundballen und übergroße Euro-Paletten können von der Paletten Autoloader Spezialisierung geladen werden.
+
+Farbwahl für Felgen.
+
+Preis 24999 €
+
+Changelog V 1.3.0.0
+- Getestet mit TestRunner_public (GIANTS) (Fehlerfrei!)
+- Autoload Trigger angepasst.
+- Diverse Collisionen bearbeitet
+- Eigengewicht erhöht
+- Abhängigkeiten von "Paletten Autoloader Spezialisierung" eingefügt
+
+
+Changelog V 1.2.0.0
+- Getestet mit TestRunner_public (GIANTS) (Fehlerfrei!)
+- Autoload Trigger seitlich angepasst
+
+Changelog V 1.1.0.1
+- Getestet mit TestRunner_public (GIANTS) (Fehlerfrei!)
+
+Changelog V 1.1.0.0
+- Federn angepasst by BigDaddy
+- centerOfMass angepasst by BigDaddy/MEMDOR
+- Übersetzung in die modDesc verlagert
+- Auswahl Gitter entfernt
+- Baumwollrundballen können jetzt geladen werden (Gurte müssen ab!)
+- Anhängekupplung angebracht (MythosofModding)
+- Neues Store-Bild
+
+Changelog V 1.0.9.1
+- Korrektur
+
+Changelog V V 1.0.9.0
+- Farbauswahl Felgen 
+- Logos 
+            ]]>        
+        </de>
+		
+        <fr>
+            <![CDATA[
+Farmtech DPW 1800 remorque avec fonction autochargeur de palettes.
+
+Pour la fonction autochargeur de palettes, la "spécialisation autochargeur de palettes" d'Achimobil est nécessaire.
+
+La remorque Farmtech DPW 1800 avec fonction autochargeuse de palettes vous facilite le travail avec les productions et les nombreuses palettes. 
+Jusqu'à 44 palettes Euro peuvent être transportées avec une remorque. 
+Si vous ajoutez un attelage de remorque lors de la configuration dans la boutique, deux remorques peuvent transporter jusqu'à 88 palettes Euro en un seul voyage.
+
+Les palettes Euro, les citernes de liquide, les palettes BigBag, les balles rondes de coton et les palettes Euro surdimensionnées peuvent être chargées par la spécialisation Autoloader de palettes.
+
+Choix de la couleur des jantes.
+
+Prix 24999 €
+
+Changelog V 1.3.0.0
+- Testé avec TestRunner_public (GIANTS) (sans erreur !)
+- Adaptation des déclencheurs d'autoload.
+- Diverses collisions traitées
+- Augmentation du poids propre
+
+Changelog V 1.2.0.0
+- Testé avec TestRunner_public (GIANTS) (sans erreur !)
+- Déclencheur d'autoload ajusté latéralement
+
+Changelog V 1.1.0.1
+- Testé avec TestRunner_public (GIANTS) (sans erreur !)
+
+Changelog V 1.1.0.0
+- Ressorts adaptés par BigDaddy
+- centerOfMass adapté par BigDaddy/MEMDOR
+- traduction déplacée dans le modDesc
+- suppression de la sélection des grilles
+- Les balles rondes de coton peuvent maintenant être chargées (les sangles doivent être enlevées !)
+- Attelage de remorque ajouté (MythosofModding)
+- Nouvelle image du magasin
+
+Changelog V 1.0.9.1
+- Correction
+
+Changelog V V 1.0.9.0
+- Choix de couleurs de jantes 
+- Logos 
+            ]]>        
+        </fr>
+		
+        <it>
+            <![CDATA[
+Rimorchio Farmtech DPW 1800 con funzione di caricatore automatico di pallet.
+
+Per la funzione del caricatore automatico di pallet è necessaria la "specializzazione per caricatori automatici di pallet" di Achimobil.
+
+Il rimorchio Farmtech DPW 1800 con funzione di caricatore automatico di pallet facilita il lavoro con le produzioni e i numerosi pallet. 
+Con un rimorchio si possono trasportare fino a 44 europallet. 
+Se si aggiunge un gancio di traino alla configurazione del negozio, si possono trasportare fino a 88 europallet con due rimorchi in un solo viaggio.
+
+Gli europallet, i serbatoi di liquidi, i pallet BigBag, le balle rotonde di cotone e gli europallet sovradimensionati possono essere caricati dalla specializzazione Pallet Autoloader.
+
+Scelta del colore dei cerchi.
+
+Prezzo 24999 €
+
+Changelog V 1.3.0.0
+- Testato con TestRunner_public (GIANTS) (senza errori!)
+- Grilletto autoload regolato.
+- Varie collisioni modificate
+- Il proprio peso è aumentato
+
+Changelog V 1.2.0.0
+- Testato con TestRunner_public (GIANTS) (senza errori!)
+- Grilletto autoload regolato lateralmente
+
+Changelog V 1.1.0.1
+- Testato con TestRunner_public (GIANTS) (senza errori!)
+
+Changelog V 1.1.0.0
+- Molle adattate da BigDaddy
+- centerOfMass adattato da BigDaddy/MEMDOR
+- Traduzione spostata in modDesc
+- Griglia di selezione rimossa
+- Le balle rotonde di cotone possono ora essere caricate (le cinture devono essere tolte!)
+- Gancio di traino attaccato (MythosofModding)
+- Nuova immagine del negozio
+
+Changelog V 1.0.9.1
+- Correzione
+
+Changelog V V 1.0.9.0
+- Selezione del colore dei cerchi 
+- Loghi 
+            ]]>        
+        </it>
+    </description>
+
+    <iconFilename>icon_dpw1800.png</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="dpw1800.xml"/>
+    </storeItems>
+
+    <dependencies>
+        <dependency>FS22_aPalletAutoLoader</dependency>
+    </dependencies>
+
+    <brands>
+        <brand name="MEMDOR" title="MEMDOR" image="brand.icon.dds"/>
+    </brands>
+
+    <vehicleTypes>
+        <type name="PalletAutoLoaderTrailer" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+        </type>
+    </vehicleTypes>
+
+    <l10n>
+		<text name="function_PalletAutoload_Trailer">
+            <en>Trailer with autoload for different pallets.</en>
+            <de>Anhänger mit Autoload für verschiedene Paletten.</de>
+            <fr>Remorque avec autoload pour différentes palettes.</fr>
+            <it>Rimorchio con autocarico per vari pallet.</it>
+        </text>
+		<text name="type_PalletAutoload_Trailer">
+            <en>Pallet Autoload</en>
+            <de>Paletten Autoloader</de>
+            <fr>Autochargeur de palettes</fr>
+            <it>Caricatore automatico di pallet</it>
+        </text>
+		<text name="unit_PalletAutoload_Trailer">
+            <en>Pallets</en>
+            <de>Paletten</de>
+            <fr>Palettes</fr>
+            <it>Pallets</it>
+        </text>
+		<text name="configuration_aPalletAutoloader_DPW">
+            <en>Maximum payload</en>
+            <de>Maximale Zuladdung</de>
+            <fr>Charge maximale</fr>
+            <it>Carico utile massimo</it>
+        </text>
+		<text name="configuration_Pallet_Payload_1">
+            <en>22 Euro pallets</en>
+            <de>22 Euro-Paletten</de>
+            <fr>22 palettes Euro</fr>
+            <it>22 Euro pallet</it>
+        </text>
+		<text name="configuration_Pallet_Payload_2">
+            <en>36 Euro pallets</en>
+            <de>36 Euro-Paletten</de>
+            <fr>36 palettes Euro</fr>
+            <it>36 Euro pallet</it>
+        </text>
+		<text name="configuration_DPW_1800_Autoload">
+            <en>Autoloader</en>
+            <de>Autolader</de>
+            <fr>Chargeur de voiture</fr>
+            <it>Caricatore automatico</it>
+        </text>
+		<text name="configuration_DPW_1800_Autoload2">
+            <en>Autoloader with grid</en>
+            <de>Autolader mit Gitter</de>
+            <fr>Chargeur de voiture avec grille</fr>
+            <it>Caricabatterie per auto con griglia</it>
+        </text>
+		<text name="configuration_DPW_1800_Autoload3">
+            <en>Autoloader Without grid, with coupling</en>
+            <de>Autolader Ohne Gitter, mit Kupplung</de>
+            <fr>Sans grille, avec accouplement</fr>
+            <it>Senza griglia, con accoppiamento</it>
+        </text>
+		<text name="configuration_DPW_1800_Autoload4">
+            <en>Autoloader With grid, with coupling</en>
+            <de>Autolader Mit Gitter, mit Kupplung</de>
+            <fr>Avec grille, avec accouplement</fr>
+            <it>Con griglia, con accoppiamento</it>
+        </text>
+    </l10n>
+
+</modDesc>
