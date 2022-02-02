@@ -6,7 +6,7 @@
         <contributor>BigDaddy (Federn, centerOfMass)</contributor>
     </contributors>
 
-    <version>1.3.0.0</version>
+    <version>1.4.0.0</version>
 
     <title>
         <en>Farmtech DPW 1800 Auto-Load.</en>
@@ -32,6 +32,15 @@ Color selection for rims.
 
 Price 24999 €
 
+Changelog V 1.4.0.0 
+- Tested with TestRunner_public (GIANTS) (Error free!) 
+- Side lights re-mounted 
+- Rear lights re-enabled 
+- Grille re-enabled (The loading area in the trailer for Autoload with grid is shorter!) 
+- New selection in the store
+
+Changelog V 1.3.0.0
+- Tested with TestRunner_public (GIANTS) (Error free!)
 Changelog V 1.3.0.0
 - Tested with TestRunner_public (GIANTS) (Error free!)
 - Autoload trigger adjusted.
@@ -78,6 +87,13 @@ Euro-Paletten, Flüssigkeitstanks, BigBag Paletten, Baumwolle Rundballen und üb
 Farbwahl für Felgen.
 
 Preis 24999 €
+
+Changelog V 1.4.0.0
+- Getestet mit TestRunner_public (GIANTS) (Fehlerfrei!)
+- Seitenlichter neu angebracht
+- Rücklichter wieder aktiviert
+- Gitter wieder aktiviert (Die Ladefläche bim Anhänger für Autoload mit Gitter ist kürzer!)
+- Neue Auswahl im Shop
 
 Changelog V 1.3.0.0
 - Getestet mit TestRunner_public (GIANTS) (Fehlerfrei!)
@@ -128,6 +144,13 @@ Choix de la couleur des jantes.
 
 Prix 24999 €
 
+Changelog V 1.4.0.0 
+- Testé avec TestRunner_public (GIANTS) (sans erreur !) 
+- Feux latéraux repositionnés 
+- Feux arrière réactivés 
+- Grille réactivée (la surface de chargement de la remorque pour autoload avec grille est plus courte !) 
+- Nouveau choix dans la boutique
+
 Changelog V 1.3.0.0
 - Testé avec TestRunner_public (GIANTS) (sans erreur !)
 - Adaptation des déclencheurs d'autoload.
@@ -174,6 +197,13 @@ Gli europallet, i serbatoi di liquidi, i pallet BigBag, le balle rotonde di coto
 Scelta del colore dei cerchi.
 
 Prezzo 24999 €
+
+Changelog V 1.4.0.0 
+- Testato con TestRunner_public (GIANTS) (senza errori!) 
+- Luci laterali riattaccate 
+- Luci posteriori riattivate 
+- Griglia riattivata (L'area di carico nel rimorchio per Autoload con griglia è più corta!) 
+- Nuova selezione nel negozio
 
 Changelog V 1.3.0.0
 - Testato con TestRunner_public (GIANTS) (senza errori!)
@@ -249,22 +279,34 @@ Changelog V V 1.0.9.0
             <it>Pallets</it>
         </text>
 		<text name="configuration_aPalletAutoloader_DPW">
-            <en>Maximum payload</en>
-            <de>Maximale Zuladdung</de>
-            <fr>Charge maximale</fr>
-            <it>Carico utile massimo</it>
+            <en>Configuration of the autoload trailer</en>
+            <de>Konfiguration des Autoload Anhänger</de>
+            <fr>Configuration du pendentif Autoload</fr>
+            <it>Configurazione del rimorchio Autoload</it>
         </text>
-		<text name="configuration_Pallet_Payload_1">
-            <en>22 Euro pallets</en>
-            <de>22 Euro-Paletten</de>
-            <fr>22 palettes Euro</fr>
-            <it>22 Euro pallet</it>
+		<text name="configuration_PWO_24_Set1">
+            <en>Without grille, without trailer hitch</en>
+            <de>Ohen Gitter, ohne Anhängekupplung</de>
+            <fr>Sans grille, sans attelage de remorque</fr>
+            <it>Senza griglia, senza gancio di traino</it>
         </text>
-		<text name="configuration_Pallet_Payload_2">
-            <en>36 Euro pallets</en>
-            <de>36 Euro-Paletten</de>
-            <fr>36 palettes Euro</fr>
-            <it>36 Euro pallet</it>
+		<text name="configuration_PWO_24_Set2">
+            <en>With grid, without trailer hitch</en>
+            <de>Mit Gitter, ohne Anhängekupplung</de>
+            <fr>Avec grille, sans attelage de remorque</fr>
+            <it>Con griglia, senza gancio di traino</it>
+        </text>
+		<text name="configuration_PWO_24_Set3">
+            <en>Without grille, with trailer hitch</en>
+            <de>Ohen Gitter, mit Anhängekupplung</de>
+            <fr>Sans grille, avec attelage de remorque</fr>
+            <it>Senza griglia, con gancio di traino</it>
+        </text>
+		<text name="configuration_PWO_24_Set4">
+            <en>With grid, with trailer hitch</en>
+            <de>Mit Gitter, mit Anhängekupplung</de>
+            <fr>Avec grille, avec attelage de remorque</fr>
+            <it>Con griglia, con gancio di traino</it>
         </text>
 		<text name="configuration_DPW_1800_Autoload">
             <en>Autoloader</en>

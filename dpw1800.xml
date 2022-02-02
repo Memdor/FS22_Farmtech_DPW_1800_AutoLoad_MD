@@ -41,6 +41,46 @@
         <mapHotspot type="TRAILER"/>
     </base>
 	
+	<configurationSets title="$l10n_configuration_aPalletAutoloader_DPW">
+		<configurationSet name="$l10n_configuration_PWO_24_Set1">
+			<configuration name="aPalletAutoLoader" index="1"/> <!-- leftRightCornerOffset="1.25 -0.443 4.038" -->
+			<configuration name="design" index="1"/>
+		</configurationSet>
+		<configurationSet name="$l10n_configuration_PWO_24_Set2">
+			<configuration name="aPalletAutoLoader" index="2"/> <!-- leftRightCornerOffset="1.25 -0.443 3.84" -->
+			<configuration name="design" index="2"/>
+		</configurationSet>
+		<configurationSet name="$l10n_configuration_PWO_24_Set3">
+			<configuration name="aPalletAutoLoader" index="1"/>
+			<configuration name="design" index="3"/>
+		</configurationSet>
+		<configurationSet name="$l10n_configuration_PWO_24_Set4">
+			<configuration name="aPalletAutoLoader" index="2"/>
+			<configuration name="design" index="4"/>
+		</configurationSet>
+	</configurationSets>
+
+    <aPalletAutoLoader>
+        <aPalletAutoLoaderConfigurations>
+            <aPalletAutoLoaderConfiguration maxObjects="80" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0">
+                <trigger node="triggerNode"/>
+                <pickupTriggers>
+                    <pickupTrigger node="pickupTriggerLeft"/>
+                    <pickupTrigger node="pickupTriggerRight"/>
+                </pickupTriggers>
+                <loadArea baseNode="dpw1800_vis" leftRightCornerOffset="1.25 -0.443 4.04" lenght="10" width="2.5" height="2.5"/>
+            </aPalletAutoLoaderConfiguration>
+            <aPalletAutoLoaderConfiguration maxObjects="80" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0">
+                <trigger node="triggerNode"/>
+                <pickupTriggers>
+                    <pickupTrigger node="pickupTriggerLeft"/>
+                    <pickupTrigger node="pickupTriggerRight"/>
+                </pickupTriggers>
+                <loadArea baseNode="dpw1800_vis" leftRightCornerOffset="1.25 -0.443 3.84" lenght="9.7" width="2.5" height="2.5"/>
+            </aPalletAutoLoaderConfiguration>
+        </aPalletAutoLoaderConfigurations>
+    </aPalletAutoLoader>
+
     <!-- <aPalletAutoLoader> -->
         <!-- <aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_DPW"> -->
             <!-- <aPalletAutoLoaderConfiguration name="$l10n_configuration_Pallet_Payload_1" price="0" maxObjects="22" useBales="false" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0"> -->
@@ -61,22 +101,9 @@
             <!-- </aPalletAutoLoaderConfiguration> -->
         <!-- </aPalletAutoLoaderConfigurations> -->
     <!-- </aPalletAutoLoader> -->
-	
-    <aPalletAutoLoader>
-        <aPalletAutoLoaderConfigurations>
-            <aPalletAutoLoaderConfiguration maxObjects="80" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3.5 0 0" UnloadLeftOffset="3.5 0 0">
-                <trigger node="triggerNode"/>
-                <pickupTriggers>
-                    <pickupTrigger node="pickupTriggerLeft"/>
-                    <pickupTrigger node="pickupTriggerRight"/>
-                </pickupTriggers>
-                <loadArea baseNode="dpw1800_vis" leftRightCornerOffset="1.25 -0.443 4.038" lenght="9.7" width="2.5" height="2.5"/>
-            </aPalletAutoLoaderConfiguration>
-        </aPalletAutoLoaderConfigurations>
-    </aPalletAutoLoader>
-	
+
     <designConfigurations>
-        <designConfiguration name="$l10n_configuration_DPW_1800_Autoload">
+        <designConfiguration name="$l10n_configuration_DPW_1800_Autoload" price="0">
             <objectChange node="barFront" visibilityActive="false"/>
             <objectChange node="barBack" visibilityActive="false"/>
             <objectChange node="colPart01" compoundChildActive="false"/>
@@ -87,7 +114,7 @@
             <objectChange node="connectionHoses" visibilityActive="false"/>
             <objectChange node="attacherJointTrailer" visibilityActive="false" rotationActive="0 -90 0"/>
         </designConfiguration>
-        <!-- <designConfiguration name="$l10n_configuration_DPW_1800_Autoload2" price="900">
+        <designConfiguration name="$l10n_configuration_DPW_1800_Autoload2" price="900">
             <objectChange node="barFront" visibilityActive="true"/>
             <objectChange node="barBack" visibilityActive="true"/>
             <objectChange node="colPart01" compoundChildActive="true"/>
@@ -97,7 +124,7 @@
             <objectChange node="kupplung" visibilityActive="false"/>
             <objectChange node="connectionHoses" visibilityActive="false"/>
             <objectChange node="attacherJointTrailer" visibilityActive="false" rotationActive="0 -90 0"/>
-        </designConfiguration> -->
+        </designConfiguration>
         <designConfiguration name="$l10n_configuration_DPW_1800_Autoload3" price="1500">
             <objectChange node="barFront" visibilityActive="false"/>
             <objectChange node="barBack" visibilityActive="false"/>
@@ -109,7 +136,7 @@
             <objectChange node="connectionHoses" visibilityActive="true"/>
             <objectChange node="attacherJointTrailer" visibilityActive="true" rotationActive="0 90 0"/>
         </designConfiguration>
-        <!-- <designConfiguration name="$l10n_configuration_DPW_1800_Autoload4" price="3900">
+        <designConfiguration name="$l10n_configuration_DPW_1800_Autoload4" price="3900">
             <objectChange node="barFront" visibilityActive="true"/>
             <objectChange node="barBack" visibilityActive="true"/>
             <objectChange node="colPart01" compoundChildActive="true"/>
@@ -119,7 +146,7 @@
             <objectChange node="kupplung" visibilityActive="true"/>
             <objectChange node="connectionHoses" visibilityActive="true"/>
             <objectChange node="attacherJointTrailer" visibilityActive="true" rotationActive="0 90 0"/>
-        </designConfiguration> -->
+        </designConfiguration>
     </designConfigurations>
 	
     <wheels>
@@ -220,8 +247,14 @@
         <sharedLight linkNode="sideMarker03_right" filename="$data/shared/assets/lights/lizard/sideMarker03_right.xml"/>
         <sharedLight linkNode="rearLight13_left" filename="$data/shared/assets/lights/lizard/rearLight13_left.xml"/>
         <sharedLight linkNode="rearLight13_right" filename="$data/shared/assets/lights/lizard/rearLight13_right.xml"/>
-        <sharedLight linkNode="sideMarker05Orange_01" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
-        <sharedLight linkNode="sideMarker05Orange_02" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeL1" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeL2" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeL3" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeL4" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeR1" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeR2" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeR3" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarker05OrangeR4" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml"/>
         <realLights>
             <high>
                 <light node="backLightsHigh1" lightTypes="0"/>
@@ -343,8 +376,14 @@
         <i3dMapping id="chockSupport02" node="0>0|0|5"/>
         <i3dMapping id="wheelChock01_01" node="0>0|0|6"/>
         <i3dMapping id="wheelChock01_02" node="0>0|0|7"/>
-        <i3dMapping id="sideMarker05Orange_02" node="0>0|1|0|0"/>
-        <i3dMapping id="sideMarker05Orange_01" node="0>0|1|0|1"/>
+        <i3dMapping id="sideMarker05OrangeL1" node="0>0|1|0|0|0"/>
+        <i3dMapping id="sideMarker05OrangeL2" node="0>0|1|0|0|1"/>
+        <i3dMapping id="sideMarker05OrangeL3" node="0>0|1|0|0|2"/>
+        <i3dMapping id="sideMarker05OrangeL4" node="0>0|1|0|0|3"/>
+        <i3dMapping id="sideMarker05OrangeR1" node="0>0|1|0|1|0"/>
+        <i3dMapping id="sideMarker05OrangeR2" node="0>0|1|0|1|1"/>
+        <i3dMapping id="sideMarker05OrangeR3" node="0>0|1|0|1|2"/>
+        <i3dMapping id="sideMarker05OrangeR4" node="0>0|1|0|1|3"/>
         <i3dMapping id="whiteRound_01" node="0>0|1|0|2"/>
         <i3dMapping id="whiteRound_02" node="0>0|1|0|3"/>
         <i3dMapping id="barFront" node="0>0|2|0"/>
