@@ -49,3 +49,57 @@ Changelog V 1.0.9.1
 Changelog V V 1.0.9.0
 - Farbauswahl Felgen 
 - Logos 
+
+---------------------------------------------------------------------------
+
+Farmtech DPW 1800 trailer with pallet autoloader function.
+
+For the function of the pallet autoloader the "Pallet Autoloader Specialization" from Achimobil is needed.
+
+Farmtech DPW 1800 trailer with pallet autoloader function will make your work with productions and numerous pallets easier. 
+Up to 44 Euro pallets can be transported with one trailer. 
+If you add a trailer hitch to the configuration in the store, two trailers can transport up to 88 Euro pallets in one trip.
+
+Euro pallets, liquid tanks, BigBag pallets, cotton round bales and oversized Euro pallets can be loaded by the pallet autoloader specialization.
+
+Color selection for rims.
+
+Price 24999 €
+
+Changelog V 1.4.0.0 
+- Tested with TestRunner_public (GIANTS) (Error free!) 
+- Side lights re-mounted 
+- Rear lights re-enabled 
+- Grille re-enabled (The loading area in the trailer for Autoload with grid is shorter!) 
+- New selection in the store
+
+Changelog V 1.3.0.0
+- Tested with TestRunner_public (GIANTS) (Error free!)
+Changelog V 1.3.0.0
+- Tested with TestRunner_public (GIANTS) (Error free!)
+- Autoload trigger adjusted.
+- Various collisions edited
+- Own weight increased
+
+Changelog V 1.2.0.0
+- Tested with TestRunner_public (GIANTS) (error free!)
+- Autoload trigger adjusted laterally
+
+Changelog V 1.1.0.1
+- Tested with TestRunner_public (GIANTS) (error free!)
+
+Changelog V 1.1.0.0
+- Springs customized by BigDaddy
+- centerOfMass customized by BigDaddy/MEMDOR
+- Translation moved to the modDesc
+- Selection grid removed
+- Round cotton bales can now be loaded (belts must come off!)
+- Trailer hitch attached (MythosofModding)
+- New store image
+
+Changelog V 1.0.9.1
+- Correction
+
+Changelog V V 1.0.9.0
+- Color selection rims
+- Logos 
